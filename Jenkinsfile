@@ -15,7 +15,7 @@ pipeline {
                  script{
                         dir("terraform")
                         {
-                            git "https://github.com/Gucci-Slides/CICDPipeline.git"
+                            git "https://github.com/Gucci-Slides/CICDPipeline-Terraform"
                         }
                     }
                 }
