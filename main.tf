@@ -1,11 +1,4 @@
 terraform {
-
-  cloud {
-    organization = "arliss"
-    workspaces {
-      name = "CICDPipeline"
-    }
-  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
