@@ -14,11 +14,6 @@ The Jenkins pipeline is defined in the **Jenkinsfile** and consists of the follo
 ## **Installation**
 
 1. Clone the repository to your local machine.
-2. In the root directory of the project, create a file named **terraform.tfvars** and set the following variable:
-
-```
-region = [Your desired AWS region]
-```
 
 ## **Usage**
 
