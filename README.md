@@ -16,7 +16,7 @@ The Jenkins pipeline is defined in the Jenkinsfile and consists of the following
 1. Clone the repository to your local machine.
 2. In the root directory of the project, create a file named **terraform.tfvars** and set the following variable:
 
-```
+```Terraform
 region = [Your desired AWS region]
 ```
 
@@ -24,7 +24,7 @@ region = [Your desired AWS region]
 
 1. Review the variables in **variables.tf** and make any necessary changes. The default region is **us-east-1**, but you can specify a different region by setting the **region** variable.
 
-```
+```Terraform
 variable "region" {
   description = "region"
   type        = string
@@ -33,6 +33,7 @@ variable "region" {
 ```
 
 2. Run the Jenkins pipeline to deploy the EC2 instance. You can set the **autoApprove** parameter to **true** to automatically apply the plan, or leave it set to **false** to manually approve the plan before applying.
+
 3. When you're finished with the EC2 instance, destroy it by running **terraform destroy**
 
 ## **License**
