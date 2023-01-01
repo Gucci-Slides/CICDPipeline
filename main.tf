@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "DemoEC2" {
-  ami           = var.amiUbuntu20-04
+  ami           = var.amiUbuntu22-04
   instance_type = var.instance_type
   tags = {
     Name = "EC2"
