@@ -5,9 +5,9 @@ variable "region" {
 }
 
 variable "amiUbuntu20-04" {
-  description = "Canonical, Ubuntu, 20.04 LTS, arm64 focal image build on 2022-12-01"
+  description = "Canonical, Ubuntu, 20.04 LTS, amd64 focal image build on 2022-12-01"
   type        = string
-  default     = "ami-023eb859c61ba0b72"
+  default     = "ami-0a6b2839d44d781b2"
 }
 
 variable "instance_type" {
