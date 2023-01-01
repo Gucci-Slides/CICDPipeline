@@ -4,11 +4,11 @@ This code uses Terraform to create an EC2 instance on AWS. It is assumed that th
 
 ## **Jenkins Pipeline**
 
-The Jenkins pipeline is defined in the Jenkinsfile and consists of the following stages:
+The Jenkins pipeline is defined in the **Jenkinsfile** and consists of the following stages:
 
 1. **Checkout**: The code is checked out from the repository.
 2. **Plan**: Terraform is initialized and a plan is generated. The plan is saved to a file and displayed in the Jenkins console.
-3. **Approval**: If the autoApprove parameter is not set to true, the pipeline will pause at this stage and wait for manual approval to proceed.
+3. **Approval**: If the **autoApprove** parameter is not set to **true**, the pipeline will pause at this stage and wait for manual approval to proceed.
 4. **Apply**: The Terraform plan is applied.
 
 ## **Installation**
