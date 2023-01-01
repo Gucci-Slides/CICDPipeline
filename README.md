@@ -17,15 +17,8 @@ The Jenkins pipeline is defined in the **Jenkinsfile** and consists of the follo
 
 ## **Usage**
 
-1. Review the variables in **variables.tf** and make any necessary changes. The default region is **us-east-1**, but you can specify a different region by setting the **region** variable.
+1. Review the variables in **variables.tf** and make any necessary changes. 
 
-```Terraform
-variable "region" {
-  description = "region"
-  type        = string
-  default     = "us-east-1"
-}
-```
 
 2. Run the Jenkins pipeline to deploy the EC2 instance. You can set the **autoApprove** parameter to **true** to automatically apply the plan, or leave it set to **false** to manually approve the plan before applying.
 
